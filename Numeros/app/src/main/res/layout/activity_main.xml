@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app=""
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
     tools:context=".MainActivity"
     android:orientation="horizontal">
 
     
     <TableLayout
-        android:layout_width="match_parent"
+        android:layout_width="385dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:weightSum="4">
 
         <TableRow
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:weightSum="4">
+            android:orientation="vertical">
+
             <Button
                 android:id="@+id/btn1"
                 android:text="@string/numero1"
                 android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.AppCompat.Button"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
 
             <Button
                 android:id="@+id/btn2"
                 android:text="@string/numero2"
                 android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
 
             <Button
                 android:id="@+id/btn3"
                 android:text="@string/numero3"
                 android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
 
         </TableRow>
 
 
         <TableRow
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:weightSum="4">
@@ -54,7 +61,9 @@
                 android:text="@string/numero4"
                 android:textSize="100sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
 
 
             <Button
@@ -62,17 +71,56 @@
                 android:text="@string/numero5"
                 android:textSize="100sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
 
             <Button
                 android:id="@+id/btn6"
                 android:text="@string/numero6"
                 android:textSize="100sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="wrap_content"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3"/>
         </TableRow>
 
+
+        <TableRow
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn7"
+                android:text="@string/numero7"
+                android:textSize="100sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:text="@string/numero8"
+                android:textSize="100sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
+
+
+            <Button
+                android:id="@+id/btn9"
+                android:text="@string/numero9"
+                android:textSize="100sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/outraCor"
+                android:layout_weight="1.3" />
+        </TableRow>
 
         <TableRow
             android:layout_height="0dp"
@@ -81,33 +129,15 @@
             android:weightSum="4">
 
             <Button
-                android:id="@+id/btn7"
-                android:text="@string/numero7"
-                android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-
-            <Button
-                android:id="@+id/btn8"
-                android:text="@string/numero8"
-                android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:id="@+id/btn9"
-                android:text="@string/numero9"
-                android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <Button
                 android:id="@+id/btn0"
                 android:text="@string/numero0"
                 android:textSize="100sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="0dp"
+                android:textColor="@color/outraCor"
+                android:layout_weight="4"/>
+
 
         </TableRow>
 
