@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00"
+            android:text="01"
             android:id="@+id/valorInicial"
             android:layout_weight="5"
             android:layout_gravity="center"
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00"
+            android:text="100"
             android:id="@+id/valorFinal"
             android:layout_weight="5"
             android:layout_gravity="center"
@@ -43,12 +43,14 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:inputType="number"
+        android:id="@+id/aposta"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Apostar"
+        android:id="@+id/btnApostar"
     />
 
 </LinearLayout>
