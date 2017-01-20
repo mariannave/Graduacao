@@ -73,10 +73,13 @@ public class MainActivity extends AppCompatActivity {
 
            if(valorAposta < valorInicial || valorAposta > valorFinal){
                 MainActivity.this.msg.setText("Você não pode apostar um valor maior ou menor que o intervalo!" );
-            }else if(valorAposta == valorArrocha){
+               MainActivity.this.aposta.setVisibility(View.GONE);
+           }else if(valorAposta == valorArrocha){
                 MainActivity.this.msg.setText("Acertou! O número é = " + valorArrocha);
-            }else if(valorFinal - valorInicial == 2 ) {
+               MainActivity.this.aposta.setVisibility(View.GONE);
+           }else if(valorFinal - valorInicial == 2 ) {
                 MainActivity.this.msg.setText("Você arrochou o número! O número é = " + valorArrocha);
+               MainActivity.this.aposta.setVisibility(View.GONE);
             }
 
 //            if(valorAposta == valorInicial){
