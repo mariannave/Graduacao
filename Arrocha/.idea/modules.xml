@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Arrocha.iml" filepath="$PROJECT_DIR$/Arrocha.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/Área de Trabalho/Graduacao/Arrocha/Arrocha.iml" filepath="$USER_HOME$/Área de Trabalho/Graduacao/Arrocha/Arrocha.iml" />
+      <module fileurl="file://$USER_HOME$/Área de Trabalho/Graduacao/Arrocha/app/app.iml" filepath="$USER_HOME$/Área de Trabalho/Graduacao/Arrocha/app/app.iml" />
     </modules>
   </component>
 </project>

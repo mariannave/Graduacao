@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="01"
+            android:text="1"
             android:id="@+id/valorInicial"
             android:layout_weight="5"
             android:layout_gravity="center"
@@ -34,7 +34,16 @@
             android:gravity="center"
             android:textSize="60sp"
             />
+
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MSG"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
 
     <EditText
         android:layout_width="wrap_content"

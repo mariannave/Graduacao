@@ -1,5 +1,6 @@
 package com.example.admin.arrocha;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button botaoApostar;
     private EditText aposta;
     private int valorArrocha;
+    private TextView msg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         this.valorFinal = (TextView) findViewById(R.id.valorFinal);
         this.botaoApostar = (Button) findViewById(R.id.btnApostar);
         this.aposta = (EditText) findViewById(R.id.aposta);
+        this.msg = (TextView) findViewById(R.id.MSG);
 
         this.botaoApostar.setOnClickListener(new OnClickBotao());
     }
@@ -44,13 +47,15 @@ public class MainActivity extends AppCompatActivity {
             int valorArrocha = MainActivity.this.valorArrocha;
 
             int valorAposta = Integer.parseInt(MainActivity.this.aposta.getText().toString());
-            int valorFinal = 0;
+            int valorFinal = 100;
             int valorInicial = 0;
 
 
-            Toast.makeText(MainActivity.this, Integer.toString(valorArrocha), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(MainActivity.this, Integer.toString(valorArrocha), Toast.LENGTH_SHORT).show();
 
-            if(valorAposta != valorArrocha || valorAposta < valorFinal && valorAposta > valorInicial){
+             if(valorAposta != valorArrocha && valorAposta < valorFinal && valorAposta > valorInicial){
+                MainActivity.this.msg.setText("Você ainda não acertou!" );
+
 
                 if(valorAposta < valorArrocha) {
                     valorInicial = valorAposta;
@@ -60,14 +65,30 @@ public class MainActivity extends AppCompatActivity {
                     valorFinal = valorAposta;
                     MainActivity.this.valorFinal.setText(Integer.toString(valorFinal));
                 }
-                if( valorFinal - valorInicial == 2 ) {
 
-               }
-
-                Log.i("Valor", "FUNFOU");
+                Log.i("Valor Arrocha", Integer.toString(valorArrocha));
+                Log.i("Valor da aposta", Integer.toString(valorAposta));
             }
 
 
+           if(valorAposta < valorInicial || valorAposta > valorFinal){
+                MainActivity.this.msg.setText("Você não pode apostar um valor maior ou menor que o intervalo!" );
+            }else if(valorAposta == valorArrocha){
+                MainActivity.this.msg.setText("Acertou! O número é = " + valorArrocha);
+            }else if(valorFinal - valorInicial == 2 ) {
+                MainActivity.this.msg.setText("Você arrochou o número! O número é = " + valorArrocha);
+            }
+
+//            if(valorAposta == valorInicial){
+//                MainActivity.this.msg.setText("Você não pode apostar o mesmo valor inicial do intervalo!" );
+//
+//            } else if(valorAposta == valorFinal){
+//                MainActivity.this.msg.setText("Você não pode apostar o mesmo valor final do intervalo!" );
+//
+//            }
+
         }
+
+
     }
 }
