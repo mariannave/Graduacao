@@ -12,6 +12,8 @@
 		840F8CE21E521918006A7E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840F8CE01E521918006A7E81 /* Main.storyboard */; };
 		840F8CE41E521918006A7E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840F8CE31E521918006A7E81 /* Assets.xcassets */; };
 		840F8CE71E521918006A7E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840F8CE51E521918006A7E81 /* LaunchScreen.storyboard */; };
+		84F9BFA61E576421006B5FD5 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9BFA51E576421006B5FD5 /* Pessoa.swift */; };
+		84F9BFA81E57651F006B5FD5 /* Cadastro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9BFA71E57651F006B5FD5 /* Cadastro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		840F8CE31E521918006A7E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840F8CE61E521918006A7E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840F8CE81E521918006A7E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F9BFA51E576421006B5FD5 /* Pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = SOURCE_ROOT; };
+		84F9BFA71E57651F006B5FD5 /* Cadastro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cadastro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		840F8CDB1E521918006A7E81 /* Pessoa */ = {
 			isa = PBXGroup;
 			children = (
+				84F9BFA41E5763E0006B5FD5 /* controller */,
+				84F9BFA31E5763DB006B5FD5 /* view */,
+				84F9BFA11E5763B9006B5FD5 /* model */,
 				840F8CDC1E521918006A7E81 /* AppDelegate.swift */,
-				840F8CDE1E521918006A7E81 /* ViewController.swift */,
-				840F8CE01E521918006A7E81 /* Main.storyboard */,
 				840F8CE31E521918006A7E81 /* Assets.xcassets */,
-				840F8CE51E521918006A7E81 /* LaunchScreen.storyboard */,
 				840F8CE81E521918006A7E81 /* Info.plist */,
 			);
 			path = Pessoa;
+			sourceTree = "<group>";
+		};
+		84F9BFA11E5763B9006B5FD5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84F9BFA51E576421006B5FD5 /* Pessoa.swift */,
+				84F9BFA71E57651F006B5FD5 /* Cadastro.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		84F9BFA31E5763DB006B5FD5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				840F8CE01E521918006A7E81 /* Main.storyboard */,
+				840F8CE51E521918006A7E81 /* LaunchScreen.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		84F9BFA41E5763E0006B5FD5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				840F8CDE1E521918006A7E81 /* ViewController.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				840F8CDF1E521918006A7E81 /* ViewController.swift in Sources */,
+				84F9BFA61E576421006B5FD5 /* Pessoa.swift in Sources */,
+				84F9BFA81E57651F006B5FD5 /* Cadastro.swift in Sources */,
 				840F8CDD1E521918006A7E81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +329,7 @@
 				840F8CED1E521918006A7E81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
