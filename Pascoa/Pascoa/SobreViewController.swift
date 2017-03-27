@@ -9,8 +9,11 @@
 import UIKit
 
 class SobreViewController: UIViewController {
+  
     var cadastro:Cadastro!
 
+    @IBOutlet weak var lbqtde: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,5 +35,10 @@ class SobreViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.lbqtde.text = String(cadastro.quantidade())
+    }
 
 }
