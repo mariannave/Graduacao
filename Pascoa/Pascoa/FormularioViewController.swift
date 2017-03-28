@@ -47,6 +47,7 @@ class FormularioViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         self.tfPessoa.text = self.chocolate.pessoa
         self.tfChocolate.text = self.chocolate.chocolate
         self.dataDaEntrega.date = self.chocolate.data
